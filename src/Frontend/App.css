@@ -1,0 +1,78 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 162vh; /* Full viewport height */
+  text-align: center;
+  background-color: #f0f0f0; /* Light background color */
+  position: relative; /* Allow absolute positioning of children */
+}
+
+.welcome-text {
+  font-family: 'GeeksforGeeks', sans-serif; /* Use GeeksforGeeks font */
+  font-size: 4rem; /* Increase font size */
+  font-weight: bold; /* Bold text */
+  color: #333; /* Dark text color */
+}
+
+.profile-container {
+  position: absolute; /* Positioning the profile icon */
+  top: 20px; /* Distance from the top */
+  left: 20px; /* Distance from the left */
+}
+
+.profile-icon {
+  cursor: pointer;
+  width: 50px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+}
+
+.cart-icon {
+  cursor: pointer;
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px; /* Adjust position as needed */
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Space between products */
+  margin-top: 20px; /* Space above product grid */
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px; /* Increased padding */
+  text-align: center;
+  background-color: #fff; /* White background for cards */
+  width: 200px; /* Decreased width */
+}
+
+.product-card img {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}

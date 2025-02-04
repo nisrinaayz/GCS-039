@@ -1,0 +1,38 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  padding: 20px;
+  background-color: #fff; /* White background for forms */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Increased width for better layout */
+  margin: 20px auto; /* Center the form horizontally */
+}
+
+h2 {
+  color: #003366; /* Dark blue color for headings */
+}
+
+input, textarea {
+  margin: 10px 0; /* Space between inputs */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Full width */
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
